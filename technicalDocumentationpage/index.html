@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="tech.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <h1>Technical Documentation for MyWebApp</h1>
+      <a class="nav-link" href="#introduction">Introduction</a>
+      <a class="nav-link" href="#installation">Installation</a>
+      <a class="nav-link" href="#usage">Usage</a>
+      <a class="nav-link" href="#reference">API Reference</a>
+      <a class="nav-link" href="#troubleshooting">Troubleshooting</a>
+    </nav>
+
+    <main id="main-doc">
+      <section class="main-section" id="introduction">
+        <h1>Introduction</h1>
+        <p>
+          MyWebApp is a web application designed to help users manage their
+          tasks efficiently. This documentation provides comprehensive guidance
+          on installation, usage, and troubleshooting. It is intended for both
+          beginners and experienced developers.
+        </p>
+      </section>
+      
+      <section class="main-section" id="installation">
+        <h1>Installation</h1>
+        <p>Follow these steps to install MyWebApp:</p>
+        <p>Prerequisites:</p>
+        <ul>
+          <li>Node.js version 14 or higher</li>
+          <li>npm (Node Package Manager)</li>
+        </ul>
+        <p>Steps:</p>
+        <ol>
+          <li>Clone the repository:</li>
+          <code>git clone https://github.com/yourusername/MyWebApp.git</code>
+          <li>Navigate to the project directory:</li>
+          <code>cd MyWebApp</code>
+          <li>Install dependencies:</li>
+          <code>npm install</code>
+          <li>Start the application:</li>
+          <code>npm start</code>
+        </ol>
+      </section>
+      
+      <section class="main-section" id="usage">
+        <h1>Usage</h1>
+        <p>
+          Once the application is running, you can start managing your tasks: <br>
+          <ol>
+            <li>Navigate to the 'Tasks' page.</li>
+            <li>Click on 'Add Task'.</li>
+            <li>Fill in the task details and click 'Save'.</li>
+          </ol>
+          All tasks will be displayed on the main page. You can filter tasks by completed status.
+        </p>
+      </section>
+      
+      <section class="main-section" id="reference">
+        <h1>API Reference</h1>
+        <p>GET /api/tasks: <br />
+          Retrieves a list of tasks.</p>
+        <p>Response:</p>
+        <code>[
+          {
+            "id": 1,
+            "title": "Example Task",
+            "completed": false
+          }
+        ]</code>
+        <p>POST /api/tasks: <br />
+          Creates a new task.</p>
+        <code>{
+          "title": "New Task",
+          "completed": false
+        }</code>
+      </section>
+      
+      <section class="main-section" id="troubleshooting">
+        <h1>Troubleshooting</h1>
+        <p>
+          Issue: Application Won't Start
+        </p>
+        <ul>
+          <li>
+            Cause: Missing dependencies.
+          </li>
+          <li>
+            Solution: Ensure all dependencies are installed by running npm install.
+          </li>
+        </ul>
+        <p>Issue: Unable to Connect to API</p>
+        <ul>
+          <li>Cause: API server not running.</li>
+          <li>
+            Solution: Start the API server by running npm start in the API directory.
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>

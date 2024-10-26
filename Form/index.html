@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="survey-container">
+        <h1>Customer Satisfaction Survey</h1>
+        <p>We appreciate your feedback! Please fill out this short survey.</p>
+        
+        <form action="#" method="post" class="survey-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <!-- Email Field -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <!-- Rating Section -->
+            <p>How would you rate our service?</p>
+            <label><input type="radio" name="rating" value="Excellent"> Excellent</label>
+            <label><input type="radio" name="rating" value="Good"> Good</label>
+            <label><input type="radio" name="rating" value="Average"> Average</label>
+            <label><input type="radio" name="rating" value="Poor"> Poor</label>
+
+            <!-- Checkbox Section -->
+            <p>What aspects of our service did you like? (Select all that apply)</p>
+            <label><input type="checkbox" name="aspect" value="Customer Support"> Customer Support</label>
+            <label><input type="checkbox" name="aspect" value="Pricing"> Pricing</label>
+            <label><input type="checkbox" name="aspect" value="Product Quality"> Product Quality</label>
+            <label><input type="checkbox" name="aspect" value="User Experience"> User Experience</label>
+
+            <!-- Dropdown Section -->
+            <label for="recommend">Would you recommend us?</label>
+            <select id="recommend" name="recommend" required>
+                <option value="" disabled selected>Select an option</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+                <option value="Maybe">Maybe</option>
+            </select>
+
+            <!-- Comments Section -->
+            <label for="comments">Additional Comments:</label>
+            <textarea id="comments" name="comments" rows="4" placeholder="Enter your comments here..."></textarea>
+
+            <!-- Submit Button -->
+            <button type="submit" class="submit-btn">Submit Survey</button>
+        </form>
+    </section>
+</body>
+</html>

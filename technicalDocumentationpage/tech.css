@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    height: 100vh;
+  }
+  
+  #navbar {
+    width: 350px; /* Fixed width for the navbar */
+    background-color: #007BFF;
+    color: white;
+    padding: 20px;
+    position: sticky; /* Keeps navbar fixed while scrolling */
+    height: 100vh; /* Full height */
+  }
+  
+  #navbar h1 {
+    margin: 0;
+    font-size: 1.5em;
+    color: rgb(6, 5, 6);
+  }
+  
+  .nav-link {
+    color: white;
+    text-decoration: none;
+    margin: 15px 0;
+    display: block; /* Makes the link area larger */
+  }
+  
+  .nav-link:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+  
+  #main-doc {
+    flex: 1; /* Takes the remaining space */
+    padding: 20px;
+    overflow-y: auto; /* Enables scrolling */
+  }
+  
+  .main-section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    color: #007BFF; /* Header color */
+  }
+  
+  code {
+    background-color: #f4f4f4;
+    padding: 2px 4px;
+    border-radius: 4px;
+    display: block; /* Display as block for better visibility */
+    margin: 10px 0; /* Margin around code blocks */
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    #navbar {
+      position: relative; /* Change to relative on smaller screens */
+      width: 100%; /* Full width */
+      height: auto; /* Auto height */
+    }
+  
+    body {
+      flex-direction: column; /* Stack elements vertically */
+    }
+  
+    #main-doc {
+      padding: 10px; /* Adjust padding for smaller screens */
+    }
+  }
+  
